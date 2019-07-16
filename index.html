@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+  	<link rel="stylesheet" href="main.css" type="text/css">
+    <meta charset="UTF-8">
+    <title>title</title>
+  </head>
+  <body>
+  	<div class="container">
+      <div id="border">
+  <h1>BLAKE DOBAY</h1>
+  <h2>A DEVELOPER.</h2>
+      </div>
+  <button type="button" id="projectbutton">PROJECTS</button>
+  <button type="button" id="aboutbutton">ABOUT</button>
+  	</div>
+
+<div id="projectsmodal" class="modal">
+
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h1>Projects</h1>
+     <h2>StockSorted</h2>
+     <p>Scrapes Yahoo Finance for all NASDAQ stocks, then posts data into database before performing calculations on data to output a suggested ranking of stocks. The project is based off of the book by Joel Greenblatt, The Little Book that Still Beats the Market. </p>
+     <p>Languages Used: Python, SQL, PHP, Javascript/JQuery</p>
+     <img id="StockSortedsample" src="StockSortedsample.png" alt="Stockmarketbackground">
+
+  </div>
+
+</div>
+
+<div id="aboutmodal" class="modal">
+
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h1>About</h1>
+    <p> My main passion is all about learning, anything and everything. Naturally, this thirst for knowledge has led me down the road of studying physics - curiosity of how the world really works. Of course, I am not just interested in only physics and there are a number of areas that pique my interest. One of those is the world of software and web development. </p>
+    <br>
+    <p>At the moment I am interested in both front (HTML, CSS, Javascript) and back (Python, SQL, PHP) end development which is displayed in my main project being StockSorted. This project was an absolute joy to create and the process has really given me the itch to further pursue software development. </p>
+    <br>
+    <p>Please feel free to get in touch </p>
+    <button id="contactme" onclick="location.href='mailto:dobayblake@gmail.com';">CONTACT ME</button>
+  </div>
+
+</div>
+
+  	<script type="text/javascript">
+  	// Get the modal
+var modal = document.getElementById("projectsmodal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("projectbutton");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}	
+
+
+  	</script>
+
+<script type="text/javascript">
+  	// Get the modal
+var aboutmodal = document.getElementById("aboutmodal");
+
+// Get the button that opens the modal
+var aboutbtn = document.getElementById("aboutbutton");
+
+// Get the <span> element that closes the modal
+var aboutspan = document.getElementsByClassName("close")[1];
+
+// When the user clicks on the button, open the modal 
+aboutbtn.onclick = function() {
+  aboutmodal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+aboutspan.onclick = function() {
+  aboutmodal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    aboutmodal.style.display = "none";
+  }
+}	
+
+
+</script>
+
+
+
+   
+  
+  </body>
+</html>
